@@ -1,1 +1,1 @@
-# google_campus
+Sentiment Anaylsis based on Amazon book reviews.
