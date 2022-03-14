@@ -9,3 +9,5 @@ Bar chart to show age categories
 Average rating 
 Location analysis - map - density mapping
 Year of publication
+
+Question we want answered: The purpose of this project is to try and use users data as well as book information to predict a book that the user would like. So the question that we want answered is what are the key features in figuring out what book will be recommended based on the data set. 
