@@ -2,11 +2,19 @@
 
 
 # Recommedation System.
-Creating a recommedation system using book reviews that would take the user's age and recommend highly rate books for that age group.
+Our goal with this project was to create a book recommendation system.
+We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. Shows and movies are recommended to the user based on their interests. 
+There are so many different inputs that the model can look at with a recommendation system for the user or subject. It seemed like a broad and relevant topic in today’s Data Science realm and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
 
+## Resources and Data Exploration:
 
-## Methods:
-Using correlation between ratings and age.
+Data Source: [Goodreads Books.csv sourced by Nilim-Kaggle](https://www.kaggle.com/code/snanilim/book-recommendation-engine/data)
+Software: Python 3.7.6,  sqlite, Jupyter Notebook
+
+Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
+One of the main categories that we was missing was the books genre. This was one of the main ways that we were hoping to group our books for recommendation so we wrote a scraping code to search for the book title on google and based off a list of genres scrape the genre for each of the books on our list. 
+The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
+We chose SQLITE for our database as it suited the size of our dataset and our need for this project. 
 
 ## Visualizations:
 Bar chart to show age categories
@@ -16,6 +24,7 @@ Year of publication
 
 Question we want answered: The purpose of this project is to try and use users data as well as book information to predict a book that the user would like. So the question that we want answered is what are the key features in figuring out what book will be recommended based on the data set. 
 
+In addition to the following [google slides](https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit#slide=id.p) we will be creating a webpage hosted through GitHub Pages. 
 
 ## Team Logistics
 
