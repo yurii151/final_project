@@ -3,15 +3,15 @@
 
 # Recommedation System.
 Our goal with this project was to create a book recommendation system.
-We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. Shows and movies are recommended to the user based on their interests. 
-There are so many different inputs that the model can look at with a recommendation system for the user or subject. It seemed like a broad and relevant topic in today’s Data Science realm and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
+We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. 
+There are so many different inputs that the model can look at with a recommendation system, It seemed like a broad and relevant topic in today’s Data Science realm and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
 
 ## Resources and Data Exploration:
 
 Data Source: [Goodreads Books.csv sourced by Nilim-Kaggle](https://www.kaggle.com/code/snanilim/book-recommendation-engine/data)
 Software: Python 3.7.6,  sqlite, Jupyter Notebook
 
-Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
+Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap in books. 
 One of the main categories that we was missing was the books genre. This was one of the main ways that we were hoping to group our books for recommendation so we wrote a scraping code to search for the book title on google and based off a list of genres scrape the genre for each of the books on our list. 
 The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
 We chose SQLITE for our database as it suited the size of our dataset and our need for this project. 
