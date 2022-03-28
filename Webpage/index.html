@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Recommendations</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      />
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--  -->
+      <div class="wrapper">
+        <h1>Book Recommendations</h1>
+      <!--  -->
+      <div class="row" >
+        <div class="col-md-12">
+          <div>
+            <div class="media-body">
+              <h2>Introduction</h2>
+              <h4 class="media-heading"> Why a recommendation system? </h4>
+              <p>Our goal was to create a book recommendation system.
+              <p>We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. Shows and movies are recommended to the user based on their interests. 
+                There are so many different inputs that the model can look at with a recommendation system for the user or subject. It seemed like a broad and relevant topic in today’s Data Science realm 
+                and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
+              </p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-4">
+        <div class="row" id="resources_and_data_exploration">
+          <h2> Resources and Data Exploration </h2>
+          <h4 class="media-heading"> Database </h4>
+          <p> Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
+          <p> One of the main categories that we was missing was the books genre. This was one of the main ways that we were hoping to group our books for recommendation so we wrote a scraping code to search for the book title on google and based off a list of preapproved genres scrape the books genre. 
+          <p> The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
+          <p> We chose SQLITE for our database as it suited the size of our dataset and our need for this project. 
+
+             </p>
+             <p>Data Source: <a href="https://www.kaggle.com/code/snanilim/book-recommendation-engine/data" target="_blank"> Goodreads Books.csv sourced by Nilim-Kaggle</a></p> 
+          <img
+            src="{{ }}"
+            class="img-responsive"
+            alt="space for future image"
+          />
+        </div>
+      </div>  
+         <!--  -->
+        <div class="col-md-8">
+          <div class="row" id="machine-learning">
+            <h2>Machine Learning </h2>
+              <h4 class="media-heading"> Preliminary data preprocessing and model choice  </h4>
+              <p> For our recommendation system, we have built a simple recommender and content-based recommender. 
+              <p> Simple recommenders: offer generalized recommendations to every user, based on book popularity.
+              <p> Content-based recommenders: suggest similar items based on a particular item. The general idea is that if a person likes a particular book, he or she will like a book similar to that title.
+              <p> Limitations for this content-based model is that we are using randomly generated attributes so our output will not be accurate.
+                  When typing in the book title, the title must match exactly as the book title in the list. This can be solved by using a drop-down book title menu.
+
+                
+                 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="row" >
+      <div class="col-md-12">
+        <div>
+          <div class="media-body">
+            <h2>Results</h2>
+            <h4 class="media-heading"> Limitations of the Model and Future Imporvements? </h4>
+            <p> --- 
+            <p> --- 
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
