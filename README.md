@@ -1,7 +1,7 @@
 
 
 
-# Recommedation System.
+# Recommedation System:
 Our goal with this project was to create a book recommendation system.
 We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. 
 There are so many different inputs that the model can look at with a recommendation system, It seemed like a broad and relevant topic in today’s Data Science realm and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
@@ -26,11 +26,11 @@ Question we want answered: The purpose of this project is to try and use users d
 
 In addition to the following [google slides](https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit#slide=id.p) we will be creating a webpage hosted through GitHub Pages. 
 
-## Team Logistics
+## Team Logistics:
 
 The majority of the our communication is comming from our teams shared slack channel. This is the place that we discuss developments to the project in mostly real time. We also utilize the time in class that we have been given to work on this project. In addition to all of these real time options, we all have exchanged phone numbers and email adresses to be able to get in contact with each other in a more urgent manner. Our communication has been a huge part of our project so far, as we were able to all agree on an idea and get to this point in the project. 
 
-## Machine Learning Models. 
+## Machine Learning Models:
 
 In the book_models.ipynb file in the Machine learing branch was where we did some exploration of our books.csv dataset that we compiled to see if there were any effective machine learning models that we could use in our book recommender. The first model that was tested on the dataset was the linear regression model. We would want the system to recommend a book if it has a rating above 3.5 Based on that condition, the linear regression model ran with 59.65% accuarcy with this classifcation report:
 
@@ -49,7 +49,7 @@ The elbow curve suggests that 2  clusters would be most optimal, so that is how 
 <img width="647" alt="Screen Shot 2022-03-27 at 4 12 22 PM" src="https://user-images.githubusercontent.com/92888170/160305292-6c08d9b4-f562-44c4-b507-8aa93e6c0509.png">
 
 
-### Pros and Cons
-.
+### Pros and Cons:
+
 By the way that our dataset was constructed, out of our first two models, the random forest model gives pretty good reccomendation. With precision of 0.95% and recall 0.63% for positive cases, this model does a fine job. However, a downside of this is that in terms of reccomending books, there is more than just averager rating, and that is the main component of the first two models. At first, we were content with using thes models. But we decided that the third model, clustering, is much more in the scope of the question we are trying to answer. Creating clusters is the best way to recommend similar books in our opinion, and clustering can achieve that. Going foward we will continue to investigate clustering and how to incorporate more in our project. We are currently solving the visual aspcet of the project but will continue to implent more elements going forward. 
 
