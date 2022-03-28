@@ -1,11 +1,11 @@
 
 
 # Recommedation System.
-Creating a recommedation system using book reviews that would take the user's age and recommend highly rate books for that age group.
+Creating a recommedation system using book reviews that would take the user's interests and recommend books with high ratings in each genre.
 
 
 ## Methods:
-Using correlation between ratings and age.
+Using the ratings to recommend popular books in different genre based on a user's interests. 
 
 ## Visualizations:
 Bar chart to show age categories
