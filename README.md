@@ -2,9 +2,14 @@
 
 
 # Recommedation System:
-Our goal with this project was to create a book recommendation system.
-We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. 
-There are so many different inputs that the model can look at with a recommendation system, It seemed like a broad and relevant topic in today’s Data Science realm and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
+Our goal with this project was to create a book recommendation system that will automatically suggest a book to a user based on their preferences.
+We chose a recommendation system because popular platforms such as Netflix, Amazon, and Spotify use these systems to keep their users interested by recommending media or other items to them based on their current tastes, taking the guesswork out of having to choose their next show, item to purchase, or song. In our case, our end-user can use our recommendation system to help choose their next book.
+### How Recommendation Systems Work
+There are three common types of recommendation engines that are utilized in many industries: Content-Based Filtering, Collaborative Filtering, and Popularity Filtering. Content-Based filtering makes recommendations based on the content of the item For example, if one reader enjoyed an adventure novel, a content-based recommendation engine would recommend another adventure novel. In collaborative filtering, users are grouped together based on their similarities. For example, if a group of 20-30 year olds enjoyed the book, <i>Harry Potter and the Sorcerer's Stone</i>, and our user was in the 20-30 year old age range, the recommendation system would suggest the same book. Lastly, a popularity-based system uses a weighted rating to collect the average rating of the book and the count of ratings to create a list of most popular books.
+### Our Recommendation System
+For our project, we have chosen to do a popularity-based recommendation system and a content-based recommendation system using the data we collected from Kaggle.com
+### Our thoughts
+There are so many different inputs that the model can look at with a recommendation system, It seemed like a broad and relevant topic in today’s Data Science realm and a good opportunity to practice a number of the skills that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
 
 ## Resources and Data Exploration:
 
