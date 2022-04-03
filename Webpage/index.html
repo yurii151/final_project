@@ -5,6 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="static/style.css">
+
+<!-- bootstrap stylesheets and jquery imkports and etc -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       
+<!-- link css sheet  -->
+<link rel="stylesheet" href="static/style.css">
+
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -21,9 +32,9 @@ h1, h2, h3, h4, h5, h6 {
     <a href="#home" class="w3-bar-item w3-button">Book Recommendations</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Introduction</a>
-      <a href="#menu" class="w3-bar-item w3-button">Resources, Data Exploration and Machine Learning</a>
-      <a href="#contact" class="w3-bar-item w3-button">Results</a>
+      <a href="#Introduction" class="w3-bar-item w3-button">Introduction</a>
+      <a href="#Resources" class="w3-bar-item w3-button">Resources, Data Exploration and Machine Learning</a>
+      <a href="#Results" class="w3-bar-item w3-button">Results</a>
     </div>
   </div>
 </div>
@@ -41,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 <div class="w3-content" style="max-width:1100px">
 
   <!-- Introduction Section -->
-  <div class="w3-row w3-padding-64" id="about">
+  <div class="w3-row w3-padding-64" id="Introduction">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
       <!-- Image Code-->
      <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Image" width="600" height="750">
@@ -50,58 +61,88 @@ h1, h2, h3, h4, h5, h6 {
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">Introduction</h1><br>
       <h5 class="w3-center">Why a recommendation system?</h5>
-      <p class="w3-large">Our goal was to create a book recommendation system.
+      <p>Our goal was to create a book recommendation system.
         <p>We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. Shows and movies are recommended to the user based on their interests. 
           There are so many different inputs that the model can look at with a recommendation system for the user or subject. It seemed like a broad and relevant topic in today’s Data Science realm 
           and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! <span class="w3-tag w3-light-grey"> Text: <a href="link" target="_blank"> link</a></p> </span></p>
-      <p class="w3-large w3-text-grey w3-hide-medium">---</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">-Space for additional text-</p>
     </div>
   </div>
   
   <hr>
   
   <!-- Resources, Data Exploration and Machine Learning Section -->
-  <div class="w3-row w3-padding-64" id="menu">
+  <div class="w3-row w3-padding-64" id="Resources">
     <div class="w3-col l6 w3-padding-large">
       <h1 class="w3-center">Resources, Data Exploration and Machine Learning</h1><br>
       <h4>Resources and Data Exploration</h4>
-      <p class="w3-text-grey">Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
+      <p class="w3-text-grey"> SQLITE, web scraping and source of our data </h4>
+      <p> Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
         <p> One of the main categories that we was missing was the books genre. This was one of the main ways that we were hoping to group our books for recommendation so we wrote a scraping code to search for the book title on google and based off a list of preapproved genres scrape the books genre. 
-        <p> The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
-        <p> We chose SQLITE for our database as it suited the size of our dataset and our need for this project. </p><br>
+            The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
+            We chose SQLITE for our database as it suited the size of our dataset and our need for this project. </p>
       <p>Data Source: <a href="https://www.kaggle.com/code/snanilim/book-recommendation-engine/data" target="_blank"> Goodreads Books.csv sourced by Nilim-Kaggle</a> 
-      <p>Website Template: <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h" target="_blank"> W3.CSS templates-Catering </a></p> 
+      
 
 
       <h4>Machine Learning</h4>
       <p class="w3-text-grey">Preliminary data preprocessing and model choice  </h4>
-        <p> For our recommendation system, we have built a simple recommender and content-based recommender. 
+        <p> For our recommendation system, we built a simple recommender and content-based recommender. 
         <p> Simple recommenders: offer generalized recommendations to every user, based on book popularity.
         <p> Content-based recommenders: suggest similar items based on a particular item. The general idea is that if a person likes a particular book, he or she will like a book similar to that title.
         <p> Limitations for this content-based model is that we are using randomly generated attributes so our output will not be accurate.
             When typing in the book title, the title must match exactly as the book title in the list. This can be solved by using a drop-down book title menu.</p><br>
     
-      <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+      <h4>Dashboard</h4>
+      <p class="w3-text-grey">Tableau Public, HTML and GitPages</p><br>
+      <p> --Space for additional text</p>
+      <p>Website Template: <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h" target="_blank"> W3.CSS templates-Catering </a></p> <br>
     
     <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="image" style="width:100%">
     </div>
   </div>
 
   <hr>
 
   <!-- Results Section -->
-  <div class="w3-container w3-padding-64" id="contact">
+  <div class="w3-container w3-padding-64" id="#Results">  
     <h1>Results</h1><br>
-    <h5 class="w3-center">Limitations of the Model and Future Imporvements?</h5>
-    <p>--- </p>
-    <p class="w3-text-blue-grey w3-large"><b>---</b></p>
-    <p>---</p>
+    <h5 class="w3-center">Limitations of the Model and Future Improvements?</h5>
+    <p>---space for additional text--- </p>
+    <!-- Collapsible list:https://getbootstrap.com/docs/4.0/components/collapse/  -->
+    <p>
+      <button class="btn btn-outline-secondary btn-block" type="button" data-toggle="collapse" data-target=".column_names" aria-expanded="false" aria-controls="block1 block2 block3 block4">Click to reveal top 5 books</button>
+    </p>
+    </div>
+      <div class="w3-center">
+        <div class="collapse column_names" id="">
+          <div class="body" >                    
+            <h5 class="w3-center">Weighted values - Title</h5>
+            <p>4.565674 - Harry Potter and the Half-Blood Prince </p>
+            <p>4.562321- Harry Potter Boxed Set Books 1-5 </p>
+            <p>4.556183 - Harry Potter and the Prisoner of Azkaban</p>
+            <p>4.546915 - The Complete Calvin and Hobbes</p>
+            <p>4.508544 - J.R.R. Tolkien 4-Book Boxed Set</p>
+        </div>
+      </div> <br>
+    <p>---space for additional text--- </p>
+    <p class="w3-text-blue-grey w3-large"><b> Contributors:</p>
+      Yurii Hanley <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
+      Julianne Itliong <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
+      Natasha Lamperti <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
+      Ru Sanjeev <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
+  </p>
   </div>
   
+  
+</div>
+<div class="col-md-1">
+</div>
+</div>
 <!-- End page content -->
 </div>
+  
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-32">
