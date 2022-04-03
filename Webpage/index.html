@@ -1,85 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Book Recommendations</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      />
-    <link rel="stylesheet" href="static/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <!--  -->
-      <div class="wrapper">
-        <h1>Book Recommendations</h1>
-      <!--  -->
-      <div class="row" >
-        <div class="col-md-12">
-          <div>
-            <div class="media-body">
-              <h2>Introduction</h2>
-              <h4 class="media-heading"> Why a recommendation system? </h4>
-              <p>Our goal was to create a book recommendation system.
-              <p>We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. Shows and movies are recommended to the user based on their interests. 
-                There are so many different inputs that the model can look at with a recommendation system for the user or subject. It seemed like a broad and relevant topic in today’s Data Science realm 
-                and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! 
-              </p>
-              </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <div class="col-md-4">
-        <div class="row" id="resources_and_data_exploration">
-          <h2> Resources and Data Exploration </h2>
-          <h4 class="media-heading"> Database </h4>
-          <p> Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
-          <p> One of the main categories that we was missing was the books genre. This was one of the main ways that we were hoping to group our books for recommendation so we wrote a scraping code to search for the book title on google and based off a list of preapproved genres scrape the books genre. 
-          <p> The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
-          <p> We chose SQLITE for our database as it suited the size of our dataset and our need for this project. 
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
 
-             </p>
-             <p>Data Source: <a href="https://www.kaggle.com/code/snanilim/book-recommendation-engine/data" target="_blank"> Goodreads Books.csv sourced by Nilim-Kaggle</a></p> 
-          <img
-            src="{{ }}"
-            class="img-responsive"
-            alt="space for future image"
-          />
-        </div>
-      </div>  
-         <!--  -->
-        <div class="col-md-8">
-          <div class="row" id="machine-learning">
-            <h2>Machine Learning </h2>
-              <h4 class="media-heading"> Preliminary data preprocessing and model choice  </h4>
-              <p> For our recommendation system, we have built a simple recommender and content-based recommender. 
-              <p> Simple recommenders: offer generalized recommendations to every user, based on book popularity.
-              <p> Content-based recommenders: suggest similar items based on a particular item. The general idea is that if a person likes a particular book, he or she will like a book similar to that title.
-              <p> Limitations for this content-based model is that we are using randomly generated attributes so our output will not be accurate.
-                  When typing in the book title, the title must match exactly as the book title in the list. This can be solved by using a drop-down book title menu.
-
-                
-                 </p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Book Recommendations</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Introduction</a>
+      <a href="#menu" class="w3-bar-item w3-button">Resources, Data Exploration and Machine Learning</a>
+      <a href="#contact" class="w3-bar-item w3-button">Results</a>
     </div>
-    <!--  -->
-    <div class="row" >
-      <div class="col-md-12">
-        <div>
-          <div class="media-body">
-            <h2>Results</h2>
-            <h4 class="media-heading"> Limitations of the Model and Future Imporvements? </h4>
-            <p> --- 
-            <p> --- 
-            </div>
-        </div>
-      </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <!-- Image Code -UPDATE-->
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Introduction</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Introduction Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <!-- Image Code-->
+     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Image" width="600" height="750">
     </div>
 
-  </body>
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Introduction</h1><br>
+      <h5 class="w3-center">Why a recommendation system?</h5>
+      <p class="w3-large">Our goal was to create a book recommendation system.
+        <p>We chose a recommendation system because popular platforms such as Netflix use them to keep their users interested. Shows and movies are recommended to the user based on their interests. 
+          There are so many different inputs that the model can look at with a recommendation system for the user or subject. It seemed like a broad and relevant topic in today’s Data Science realm 
+          and a good opportunity to practice a number of the skill that we learned over the course of the past several month. As an added bonus, we all enjoy reading! <span class="w3-tag w3-light-grey"> Text: <a href="link" target="_blank"> link</a></p> </span></p>
+      <p class="w3-large w3-text-grey w3-hide-medium">---</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Resources, Data Exploration and Machine Learning Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Resources, Data Exploration and Machine Learning</h1><br>
+      <h4>Resources and Data Exploration</h4>
+      <p class="w3-text-grey">Our Dataset was sourced from Kaggle. It was a large dataset and included most of the categories which we wanted to explore. We started by attempting to merge a few of the datasets that we found to see if we could combine them to get a larger dataset with more categories to explore. This was unsuccessful as there were not enough overlap. 
+        <p> One of the main categories that we was missing was the books genre. This was one of the main ways that we were hoping to group our books for recommendation so we wrote a scraping code to search for the book title on google and based off a list of preapproved genres scrape the books genre. 
+        <p> The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
+        <p> We chose SQLITE for our database as it suited the size of our dataset and our need for this project. </p><br>
+      <p>Data Source: <a href="https://www.kaggle.com/code/snanilim/book-recommendation-engine/data" target="_blank"> Goodreads Books.csv sourced by Nilim-Kaggle</a> 
+      <p>Website Template: <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h" target="_blank"> W3.CSS templates-Catering </a></p> 
+
+
+      <h4>Machine Learning</h4>
+      <p class="w3-text-grey">Preliminary data preprocessing and model choice  </h4>
+        <p> For our recommendation system, we have built a simple recommender and content-based recommender. 
+        <p> Simple recommenders: offer generalized recommendations to every user, based on book popularity.
+        <p> Content-based recommenders: suggest similar items based on a particular item. The general idea is that if a person likes a particular book, he or she will like a book similar to that title.
+        <p> Limitations for this content-based model is that we are using randomly generated attributes so our output will not be accurate.
+            When typing in the book title, the title must match exactly as the book title in the list. This can be solved by using a drop-down book title menu.</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Results Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Results</h1><br>
+    <h5 class="w3-center">Limitations of the Model and Future Imporvements?</h5>
+    <p>--- </p>
+    <p class="w3-text-blue-grey w3-large"><b>---</b></p>
+    <p>---</p>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
 </html>
