@@ -6,15 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="static/style.css">
-
-<!-- bootstrap stylesheets and jquery imkports and etc -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
        
-<!-- link css sheet  -->
-<link rel="stylesheet" href="static/style.css">
 
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
@@ -81,19 +76,18 @@ h1, h2, h3, h4, h5, h6 {
             We chose SQLITE for our database as it suited the size of our dataset and our need for this project. </p>
       <p>Data Source: <a href="https://www.kaggle.com/code/snanilim/book-recommendation-engine/data" target="_blank"> Goodreads Books.csv sourced by Nilim-Kaggle</a> 
       
-
-
       <h4>Machine Learning</h4>
       <p class="w3-text-grey">Preliminary data preprocessing and model choice  </h4>
         <p> For our recommendation system, we built a simple recommender and content-based recommender. 
         <p> Simple recommenders: offer generalized recommendations to every user, based on book popularity.
-        <p> Content-based recommenders: suggest similar items based on a particular item. The general idea is that if a person likes a particular book, he or she will like a book similar to that title.
-        <p> Limitations for this content-based model is that we are using randomly generated attributes so our output will not be accurate.
-            When typing in the book title, the title must match exactly as the book title in the list. This can be solved by using a drop-down book title menu.</p><br>
+        <p> Content-based recommenders: suggest similar items based on a particular item. The general idea is that if a person likes a particular book, he or she will like a book similar to that title.</p>
+        <br>
     
       <h4>Dashboard</h4>
       <p class="w3-text-grey">Tableau Public, HTML and GitPages</p><br>
-      <p> --Space for additional text</p>
+      <p> We choose to create a webpage hosted by GitPages for our dashboard. Our Interactive element is the top navigation bar as well as a click to reveal button in our results section. 
+      
+      <p>Some of the visualizations were created using Tableau Public</p>
       <p>Website Template: <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h" target="_blank"> W3.CSS templates-Catering </a></p> <br>
     </div>
     <div class="w3-col l6 w3-padding-large">
@@ -119,14 +113,15 @@ h1, h2, h3, h4, h5, h6 {
   <div class="w3-row w3-padding-64" id="#Results">  
     <h1>Results</h1><br>
     <h5 class="w3-center">Limitations of the Model and Future Improvements?</h5>
-    <p>---space for additional text--- </p>
+    <p> We  were able to create two working machine learning models which could recommend books (from this dataset) to readers. The simple recommender selected the top 5  rated books from the dataset based on a weighted rating of the rating count and the average rating. Simple, yet useful.  </p>
+    <p>The second recommendation system looked at the dummy data that we provided of a users age, etc and based off a book that they enjoyed, it would suggest a similarly rated book in the same genre.  
     <!-- Collapsible list:https://getbootstrap.com/docs/4.0/components/collapse/  -->
     <p>
       <button class="btn btn-outline-secondary btn-block" type="button" data-toggle="collapse" data-target=".column_names" aria-expanded="false" aria-controls="block1 block2 block3 block4">Click to reveal top 5 books</button>
     </p>
     </div>
       <div class="w3-center">
-        <div class="collapse column_names" id="">
+        <div class="collapse column_names" id="#Results">
           <div class="body" >                    
             <h5 class="w3-center">Weighted values - Title</h5>
             <p>4.565674 - Harry Potter and the Half-Blood Prince </p>
@@ -136,15 +131,20 @@ h1, h2, h3, h4, h5, h6 {
             <p>4.508544 - J.R.R. Tolkien 4-Book Boxed Set</p>
         </div>
       </div> <br>
-    <p>---space for additional text--- </p>
+    <p> Limitations for this content-based model is that we are using randomly generated attributes so our output will not be accurate.
+      When typing in the book title, the title must match exactly as the book title in the list. This can be solved by using a drop-down book title menu. 
+    
+    </p>
+    <hr>
     <p class="w3-text-blue-grey w3-large"><b> Contributors:</p>
+      <p class="w3-text-grey">
       Yurii Hanley <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
       Julianne Itliong <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
       Natasha Lamperti <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
-      Ru Sanjeev <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br>
+      Ru Sanjeev <a href="" target="_blank">(LinkedIn)</a> <a href="" target="_blank">(GitHub)</a> <br></p>
   </p>
   </div>
-  
+ 
   
 </div>
 <div class="col-md-1">
