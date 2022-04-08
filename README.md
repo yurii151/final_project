@@ -21,24 +21,35 @@ One of the main categories that we was missing was the books genre. This was one
 The code for scraping the books genre ran successfully, unfortunately we ran into issues with HTTP Error 429: Too Many Requests and in the end moved forward with dummy data. 
 We chose SQLITE for our database as it suited the size of our dataset and our need for this project. 
 
-## Visualizations:
-Bar chart to show age categories
-
-
-
-
-Average rating 
-Location analysis - map - density mapping
-Year of publication
+# Visualizations:
 
 Question we want answered: The purpose of this project is to try and use users data as well as book information to predict a book that the user would like. So the question that we want answered is what are the key features in figuring out what book will be recommended based on the data set. 
 
 In addition to the following [google slides](https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit#slide=id.p) we will be creating a webpage hosted through GitHub Pages. 
 
-<img width="500" alt="Screen Shot 2022-04-05 at 4.59.24 PM"
- src="https://github.com/yurii151/final_project/blob/022bd190262a809ee4de72124644467342607747/Screen%20Shot%202022-04-05%20at%204.59.24%20PM.png">
+## Tableau Visuals:
 
-In the book_models.ipynb file in the Machine learing branch was where we did some exploration of our books.csv dataset that we compiled to see if there were any effective machine learning models that we could use in our book recommender. The first model that was tested on the dataset was the linear regression model. We would want the system to recommend a book if it has a rating above 3.5 Based on that condition, the linear regression model ran with 59.65% accuarcy with this classifcation report:
+<img width="600" alt="Screen Shot 2022-04-05 at 4.59.24 PM"
+ src="https://github.com/yurii151/final_project/blob/022bd190262a809ee4de72124644467342607747/Screen%20Shot%202022-04-05%20at%204.59.24%20PM.png">
+ 
+ This bar graphs tells shows us the most popular genres based on book ratings. 
+  1) Non Fiction
+  2) Thriller
+  3) Adventure 
+  4) Romance 
+  5) Fiction
+ 
+ <img width="550" alt="Screen Shot 2022-04-04 at 6.44.37 PM.png" src="https://github.com/yurii151/final_project/blob/022bd190262a809ee4de72124644467342607747/Screen%20Shot%202022-04-04%20at%206.44.37%20PM.png">
+      
+Looking at user demographics this shows us that majoirty of our book lovers are between the ages 25 to 35. 
+      
+<img width="550" alt="User Location.png" src="https://github.com/yurii151/final_project/blob/022bd190262a809ee4de72124644467342607747/User%20Location.png">
+
+Density map shows that high volume of our readers are located mainly in the east coast.
+
+## Machine Learning:
+    
+    In the book_models.ipynb file in the Machine learing branch was where we did some exploration of our books.csv dataset that we compiled to see if there were any effective machine learning models that we could use in our book recommender. The first model that was tested on the dataset was the linear regression model. We would want the system to recommend a book if it has a rating above 3.5 Based on that condition, the linear regression model ran with 59.65% accuarcy with this classifcation report:
 
 <img width="659" alt="Screen Shot 2022-03-27 at 3 52 55 PM" src="https://user-images.githubusercontent.com/92888170/160304600-7221aca7-5f40-4784-b31d-88f76f44ca40.png">
 
