@@ -23,6 +23,10 @@ We chose SQLITE for our database as it suited the size of our dataset and our ne
 
 ## Visualizations:
 Bar chart to show age categories
+
+
+
+
 Average rating 
 Location analysis - map - density mapping
 Year of publication
@@ -31,8 +35,8 @@ Question we want answered: The purpose of this project is to try and use users d
 
 In addition to the following [google slides](https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit#slide=id.p) we will be creating a webpage hosted through GitHub Pages. 
 
-
-## Machine Learning Models:
+<img width="500" alt="Screen Shot 2022-04-05 at 4.59.24 PM"
+ src="https://github.com/yurii151/final_project/blob/022bd190262a809ee4de72124644467342607747/Screen%20Shot%202022-04-05%20at%204.59.24%20PM.png">
 
 In the book_models.ipynb file in the Machine learing branch was where we did some exploration of our books.csv dataset that we compiled to see if there were any effective machine learning models that we could use in our book recommender. The first model that was tested on the dataset was the linear regression model. We would want the system to recommend a book if it has a rating above 3.5 Based on that condition, the linear regression model ran with 59.65% accuarcy with this classifcation report:
 
