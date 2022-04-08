@@ -45,7 +45,7 @@ Looking at user demographics this shows us that majoirty of our book lovers are 
       
 <img width="550" alt="User Location.png" src="https://github.com/yurii151/final_project/blob/022bd190262a809ee4de72124644467342607747/User%20Location.png">
 
-Density map shows that high volume of our readers are located mainly in the east coast.
+Density map shows that our readers are located in the US and a high volume of them are located in the east coast.
 
 ## Machine Learning:
     
