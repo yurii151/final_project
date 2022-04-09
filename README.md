@@ -1,6 +1,6 @@
 
-Link to our webpage/dashboard: https://yurii151.github.io/final_project/
-Link to our Google Slides: https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit?usp=sharing
+<p>Link to our webpage/dashboard: https://yurii151.github.io/final_project/</p>
+<p>Link to our Google Slides: https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit?usp=sharing</p>
 
 # Recommedation System:
 Our goal with this project was to create a book recommendation system that will automatically suggest a book to a user based on their preferences.
