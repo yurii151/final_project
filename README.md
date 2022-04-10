@@ -107,6 +107,7 @@ We chose oversampling for this test because we had a low 'no recommend' value co
 <b>This model provided a 59.65% accuarcy score</b> with this classifcation report:
 
 <img width="659" alt="Screen Shot 2022-03-27 at 3 52 55 PM" src="https://user-images.githubusercontent.com/92888170/160304600-7221aca7-5f40-4784-b31d-88f76f44ca40.png">
+
 #### RandomForestClassifier 
 We choose to use Random Forest Classifier because we realize that the answer to our question would be a categorical value (yes or no) versus a numerical value. 
 <b>This model ran with 61.63% accuracy score</b> with this classification report:
@@ -127,10 +128,16 @@ In our two supervised learning models, we had accuracy scores between 59% - 61%.
 
 ## Finally, building our recommendation system
 Now that we have explored the data with the help of Machine Learning models, we wanted to create a recommendation system that <i>actually</i> recommends books to a user!
+
 #### Simple Recommendation System
+Using a weighted average rating, we were able to populate the top rated book titles based on their average rating and ratings count
 <img width="647" alt="weighted_rating" src="https://github.com/yurii151/final_project/blob/ea0a234f70896f265f34007bd2c86c39e41add7c/Images/Screen%20Shot%202022-04-09%20at%209.36.00%20AM.png">
 
 #### Content-Based Recommendation System
+Using Natural Language Processing Methods, we were able to create a similarity score and group similar book titles together based on similar features.
+
 <img width="647" alt="content-based" src="https://github.com/yurii151/final_project/blob/ea0a234f70896f265f34007bd2c86c39e41add7c/Images/Screen%20Shot%202022-04-09%20at%209.36.56%20AM.png">
 
+#### Recommendation Demo
+<img width="647" alt="demo" src="https://media.giphy.com/media/qXWV8NruKKsPP1dv4i/giphy.gif">
 
