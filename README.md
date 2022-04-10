@@ -2,7 +2,7 @@
 <p>Link to our webpage/dashboard: https://yurii151.github.io/final_project/</p>
 <p>Link to our Google Slides: https://docs.google.com/presentation/d/1AM1x0Q1oyPE18vvBQ19UnV1bJkfS3XROPo5NXjXs9BA/edit?usp=sharing</p>
 
-# Recommedation System:
+# Building a Recommedation System
 Our goal with this project was to create a book recommendation system that will automatically suggest a book to a user based on their preferences.
 We chose a recommendation system because popular platforms such as Netflix, Amazon, and Spotify use these systems to keep their users interested by recommending media or other items to them based on their current tastes, taking the guesswork out of having to choose their next show, item to purchase, or song. In our case, our end-user can use our recommendation system to help choose their next book.
 ### How Recommendation Systems Work
